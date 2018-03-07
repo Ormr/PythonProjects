@@ -25,12 +25,8 @@ def edit_file(file_path):
 		with open(file_path) as fp:
 			# Scroll file line by line and replace if it necessary
 			for line in fp.readlines():
-				#print(line, end='')
-
 				if choice in line:
 					line = line.replace(choice, change)
-					#print(line, end='')
-
 				file_read += line
 
 		with open(file_path, 'w+') as file_write:
@@ -41,8 +37,6 @@ def edit_file(file_path):
 
 	except FileNotFoundError:
 		print('No such file or directory: {}'.format(file_path))
-
-
 
 if __name__ == '__main__':
 	file_path = '/home/old-timer/PythonFiles/programs/text_for_edit.txt'
