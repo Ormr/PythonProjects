@@ -2,63 +2,51 @@
 
 def min(*args, **kwargs):
 	"""
-	Define minimum
+	Finds a minimum of functions
 	"""
 	key = kwargs.get("key", None)
 
 	def get_first_from_sorted(args, key):
 		first = sorted(*args, key=key)
 		return first[0]
-
+	
 	try:
 		return get_first_from_sorted(args, key)
-	
 	except TypeError:
 		res = sorted(args, key=key)
 		return res[0]
 	
 def max(*args, **kwargs):
-
+	"""
+	Finds a maximum of functions
+	"""
 	key = kwargs.get("key", None)
 
 	def get_first_from_sorted(args, key):
-		last = sorted(*args, key=key reverse=True)
-		return last[0]
-
+		first = sorted(*args, key=key reverse=True)
+		return first[0]
 	
 	try:
 		return get_first_from_sorted(args, key)
-	
 	except TypeError:
 		res = sorted(args, key=key, reverse=True)
 		return res[0]
 
 """
+Another version of the implementation
 def get_first_from_sorted(args, key, reverse):
-
     if len(args) == 1:
-
         args = iter(args[0])
-
     else:
-
         args = iter(x for x in args)
-
     return sorted(args, key=key, reverse=reverse)[0]
 
-
 def min(*args, **kwargs):
-
     key = kwargs.get("key", None)
-
     return get_first_from_sorted(args, key, False)
 
-
-
 def max(*args, **kwargs):
-
     key = kwargs.get("key", None)
-
     return get_first_from_sorted(args, key, True)
 """
 
