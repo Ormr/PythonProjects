@@ -57,3 +57,4 @@ if __name__ == '__main__':
 	numbers = (10)
 	prime_numbers = primeNumber(numbers)
 	logger.debug("Prime numbers: {}".format(prime_numbers))
+	
