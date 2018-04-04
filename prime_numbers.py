@@ -10,7 +10,6 @@ file_handler.setFormatter(formatter)
 file_handler.setLevel(logging.ERROR)
 
 stream_heandler = logging.StreamHandler()
-# stream_heandler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
 logger.addHandler(stream_heandler)
