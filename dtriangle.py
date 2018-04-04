@@ -2,8 +2,6 @@ import argparse
 
 from math import acos, degrees
 
-# argpare
-
 def get_parsed_args():
     """
     Gives parsed arguments from command line.
