@@ -15,7 +15,6 @@ stream_heandler = logging.StreamHandler()
 logger.addHandler(file_handler)
 logger.addHandler(stream_heandler)
 
-<<<<<<< HEAD
 def primeNumber(num):
 	"""
 	Check if num is a prime number - return True
@@ -36,7 +35,7 @@ if __name__ == '__main__':
 	number = 3
 	prime_number = primeNumber(number)
 	logger.debug("Prime number: {}".format(prime_number))
-=======
+
 def primeNumber(args):
 	"""
 	The function takes a list of numbers, finds from them simple numbers and returns 
@@ -79,5 +78,3 @@ if __name__ == '__main__':
 	numbers = (10)
 	prime_numbers = primeNumber(numbers)
 	logger.debug("Prime numbers: {}".format(prime_numbers))
-	
->>>>>>> 4b9f517ac0419c7198cc28b4b3f05e3f361aec25
