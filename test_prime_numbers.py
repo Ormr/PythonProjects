@@ -4,7 +4,6 @@ from prime_numbers import primeNumber
 class TestPrimeNumbers(unittest.TestCase):
 
 	def test_primeNumber(self):
-<<<<<<< HEAD
 		numbers = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 
 		22, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 39, 
 		40, 42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 
@@ -20,19 +19,6 @@ class TestPrimeNumbers(unittest.TestCase):
 		numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 		for number in numbers:
 			self.assertEqual(primeNumber(number), True)
-=======
-		numbers = range(1, 15)
-		self.assertEqual(primeNumber(numbers), [1, 2, 3, 5, 7, 11, 13])
-
-		numbers = [33, 37, 44, 47, 64, 99]
-		self.assertEqual(primeNumber(numbers), [37, 47])
-
-		numbers = [88]
-		self.assertEqual(primeNumber(numbers), [])
-
-		numbers = [53]
-		self.assertEqual(primeNumber(numbers), [53])
->>>>>>> 4b9f517ac0419c7198cc28b4b3f05e3f361aec25
 
 if __name__ == '__main__':
 	unittest.main()
